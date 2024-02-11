@@ -8,7 +8,7 @@ const querystring = require("querystring");
 const fs = require("fs");
 
 
-// Initialization
+// Initilization
 
 var config = {
     brand: "doenerium",
